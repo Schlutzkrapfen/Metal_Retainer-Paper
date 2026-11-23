@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}Hardware Used}{1}{section.1}%
 \contentsline {section}{\numberline {2}Yolo}{1}{section.2}%
 \contentsline {section}{\numberline {3}understanig yolo Modell graph}{2}{section.3}%
-\contentsline {section}{\numberline {4}Errors}{3}{section.4}%
-\contentsline {section}{\numberline {5}Hypertune}{3}{section.5}%
+\contentsline {section}{\numberline {4}Errors}{2}{section.4}%
+\contentsline {section}{\numberline {5}Hypertune}{2}{section.5}%

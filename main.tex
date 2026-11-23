@@ -67,7 +67,7 @@ image.
 \section{understanig yolo Modell graph}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=1\linewidth]{Pictures/train-864/results.png}
+	\includegraphics[width=1\linewidth]{pictures/train-1678/results.png}
 	\caption{First test runs with each label: left side YOLOv8, right side YOLOv26.}
 	\label{fig:result-graph}
 \end{figure}
@@ -82,7 +82,8 @@ A standard YOLO performance visualization consists of ten distinct plots, each t
 The total number of labels is 12, but that happens to be the value that is filtered out of 1000 images, so it is a label that does not occur often.
 
 \section{Hypertune}
-After some tests with hypertune, these were the best values that came out. If you look at the confusion matrix it showes even after Hypertuning and a value of 80. The errors I can see that were made where just because the yolo modell made labeled some things 2
+After some tests with hypertune, these were the best values that came out. If you look at the confusion matrix it showes even after Hypertuning and a value of 80. It showes that it makes mane mistakes and draws many boxes where there shouldn't be errros \ref{fig:confusion-matrix} The errors I can see that were made where just because the yolo modell made labeled some things 2 times.\ref{fig:results}, and I can't also not for the live of me find outh which one was worng in the labels. So the results are more promessing
+
 \begin{verbatim}
 "best_trial": 80,
  "best_mAP50": 0.8146015037593985,
@@ -101,4 +102,18 @@ After some tests with hypertune, these were the best values that came out. If yo
    "box": 11.028296175840389
  },
 \end{verbatim}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=1\linewidth]{pictures/train-1678/confusion_matrix.png}
+	\caption{}
+	\label{fig:confusion-matrix}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.48\linewidth]{pictures/train-1678/val_batch0_labels.jpg}%
+	\hfill
+	\includegraphics[width=0.48\linewidth]{pictures/train-1678/val_batch0_pred.jpg}
+	\caption{Ground truth labels (left) and model predictions (right).}
+	\label{fig:results}
+\end{figure}
 \end{document}
